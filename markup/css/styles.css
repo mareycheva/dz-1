@@ -1,0 +1,202 @@
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+} 
+
+body {
+    margin: 0;
+    font: 14px/1.4286 Roboto, Arial, Helvetica, sans-serif;
+    background-color: #3a454d;
+    color: #fff;
+}
+
+p,
+ul,
+ol,
+h1,
+h2,
+h3,
+h4 {
+    margin: 0 0 1em;
+}
+
+img {
+    max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+}
+
+.container {
+    max-width: 767px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.heading {
+    text-align: center;
+}
+
+.heading h1 {
+    color: #fff;
+    text-transform: uppercase;
+    border-bottom: 4px solid #4e5a62;
+    line-height: 1.4;
+    font-size: 30px;
+    padding-bottom: 9px;
+    margin-top: 34px;
+    display: inline-block;
+}
+
+.col {
+    padding: 0 0 26px;
+}
+
+.btn-holder {
+    text-align: center;
+    margin-top: 38px;
+}
+
+.btn {
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 1;
+    text-decoration: none;
+    border: 2px solid #fff;
+    padding: 15px 21px;
+    border-radius: 7px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.card {
+    position: relative;
+}
+
+.card img {
+	display: block;
+	width: 100%;
+}
+
+.card-title {
+    width: 100%;
+    text-transform: uppercase;
+    padding: 24px;
+    background-color: #292f36;
+    color: #fff;
+    margin: 0;
+}
+
+.hover-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    transition: opacity .3s;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgba(41, 47, 54, .5);
+}
+
+.hover-box .plus {
+    margin: auto;
+}
+
+.card:hover .hover-box {
+    opacity: 1;
+}
+
+@media (min-width: 768px) {
+    .heading {
+        text-align: left;
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -10px;
+    }
+
+    .col {
+        width: 33.33%;
+        padding: 0 10px 20px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1170px;
+        margin: 0 auto;
+    }
+
+    .heading h1 {
+        border-bottom: 0;
+        border-left: 10px solid #4e5a62;
+        padding-left: 17px;
+        font-size: 36px;
+        margin: 85px 0 63px;
+        padding-bottom: 0;
+        line-height: 1;
+    }
+    .col {
+        padding: 0 15px 30px;
+    }
+
+    .row {
+        margin: 0 -15px;
+    }
+
+}
+
+.test {
+    width: 400px;
+    height: 400px;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle {
+    width: 70px;
+    height: 70px;
+    background-color: black;
+    transform: rotate(45deg) scale(2); 
+}
+
+
+.circle:hover {
+    background-color: yellow;
+
+}
+@keyframes anim { 
+    from {
+        background-color: green;
+
+    }
+
+    to {
+        background-color: blue;
+    }
+} 
+
+
+
+
+
+
+
+
+
+
+
+
